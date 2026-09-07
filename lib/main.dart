@@ -86,7 +86,7 @@ class SecondScreen extends StatelessWidget{
                   MaterialPageRoute(builder: (context) => ThirdScreen())
                   );
               },
-               child: Text('MY projects')
+               child: Text('MY Skills')
                  
 
                ),
@@ -104,7 +104,7 @@ class ThirdScreen extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
    return Scaffold(
-    appBar: AppBar(title: Text('my projects')),
+    appBar: AppBar(title: Text('my Skills')),
       body: Center( 
         child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
@@ -126,7 +126,7 @@ class ThirdScreen extends StatelessWidget{
               ElevatedButton(onPressed: () {
                 Navigator.push(
                   context, 
-                  MaterialPageRoute(builder: (context) => FourthScreen())
+                  MaterialPageRoute(builder: (context) => FifthScreen())
                   );
               },
                child: Text('MY projects')
@@ -170,10 +170,10 @@ class ThirdScreen extends StatelessWidget{
               ElevatedButton(onPressed: () {
                 Navigator.push(
                   context, 
-                  MaterialPageRoute(builder: (context) => SecondScreen())
+                  MaterialPageRoute(builder: (context) => FirstScreen())
                   );
               },
-               child: Text('Sysarch Project')
+               child: Text('back to home')
                  
 
                ),
@@ -191,7 +191,7 @@ class ThirdScreen extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
    return Scaffold(
-    appBar: AppBar(title: Text('Contact me')),
+    appBar: AppBar(title: Text('Sysarch project')),
       body: Center( 
         child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
@@ -203,8 +203,19 @@ class ThirdScreen extends StatelessWidget{
 
               ),
               SizedBox(height: 10),
-              Text('Contact me:', style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)), 
-              Text('Malinaocharlie74@gmail.com',  textAlign: TextAlign.justify, maxLines: 4,overflow: TextOverflow.ellipsis, style: TextStyle(
+              Text('Sysarcj PRoject', style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)), 
+              Text('Title: ', style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
+              Text('Abstract', style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)), 
+              Text("""The project aims to develop SNDRA Park, a web-based smart parking reservation system that
+lets a driver reserve a specific parking bay before arriving, and lets the parking booth and
+management work from that same reservation record.
+A customer selects a floor, sees live slot availability, holds an open bay, and receives a barcode
+pass. At the gate, the booth teller scans the pass to record Time In and scans it again on exit to
+record Time Out; the system then computes the fee from the actual duration and marks it paid.
+An administrator watches the same live floor map, manages floors, slots and staff, and reads
+revenue and demand reports. All three roles share one reservation record, so the driver's
+booking, the booth's transaction, and the administrator's report row are the same row and never
+need to be reconciled by hand.""",  textAlign: TextAlign.justify, maxLines: 4,overflow: TextOverflow.ellipsis, style: TextStyle(
     fontSize: 16.0,
     height: 1.5,                
     letterSpacing: 0.5,)),
@@ -213,10 +224,10 @@ class ThirdScreen extends StatelessWidget{
               ElevatedButton(onPressed: () {
                 Navigator.push(
                   context, 
-                  MaterialPageRoute(builder: (context) => SecondScreen())
+                  MaterialPageRoute(builder: (context) => FourthScreen())
                   );
               },
-               child: Text('Sysarch Project')
+               child: Text('contact me')
                  
 
                ),
