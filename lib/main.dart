@@ -59,17 +59,21 @@ class SecondScreen extends StatelessWidget{
   Widget build(BuildContext context) {
    return Scaffold(
     appBar: AppBar(title: Text('About me')),
-      body: Center( 
+      body: Center(
         child: Column(
+            
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
+              Image.asset('assets/images/libatod.webp', width: 200, height: 200,),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
                 ],
+                
 
               ),
-              SizedBox(height: 10), 
+              SizedBox(height: 10),
+               
               Text('Libatod, Charlie Mer M, i am 20 years currently living in malabon city and studying BSIT in global reciprocal colleges ',  textAlign: TextAlign.justify, maxLines: 4,overflow: TextOverflow.ellipsis, style: TextStyle(
     fontSize: 16.0,
     height: 1.5,                
